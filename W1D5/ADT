@@ -1,0 +1,51 @@
+class Stack
+
+def initialize
+    @store = []
+end
+
+def push(el)
+    @store.push(el)
+end
+
+def pop
+    @store.pop 
+end
+
+def peek
+    @store.last
+end
+
+end
+
+ class Queue 
+
+ def enqueue
+    self.unshift(ele) 
+ end
+
+ def dequeue 
+    self.pop
+end
+
+def peek
+    self[-1]
+end
+end
+
+class Map
+
+attr_writer :key, :value
+
+attr_reader :key
+
+def delete(key)
+  self.each do |arr|
+    arr.each do |ele|
+    arr.shift if key == ele
+    end
+    end
+end
+
+  def show 
+  
